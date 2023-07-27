@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    height: 200vh;
+    font-family: "Open Sans";
+}
+
+.navbar{
+    background-color: rgb(60, 116, 218);
+    color: white;
+    position: fixed;
+    padding: 1rem;
+    width: fit-content;
+    height: 100vh;
+    /* padding-right: 5rem; */
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.navbar > h1{
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.navbar > .group {
+    margin-block: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.navbar > .group > span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar > .svg-container{
+    opacity: 0.4;
+    align-self: center;
+}
