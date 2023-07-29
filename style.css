@@ -2,7 +2,6 @@
 
 body{
     margin: 0;
-    height: 200vh;
     font-family: "Open Sans";
 }
 
@@ -13,7 +12,6 @@ body{
     padding: 1rem;
     width: fit-content;
     height: 100vh;
-    /* padding-right: 5rem; */
     width: 15rem;
     display: flex;
     flex-direction: column;
@@ -40,4 +38,64 @@ body{
 .navbar > .svg-container{
     opacity: 0.4;
     align-self: center;
+}
+
+.content{
+    margin-left: 17rem;
+    display: flex;
+}
+
+.topbar{
+    width: 100%;
+    padding-inline: 2rem;
+}
+
+.topbar > .row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar > .row1 > .right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search{
+    width: 40vw;
+    box-sizing: border-box;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1000px;
+    border: #c5c5c5 1px solid;
+    transition: border ease-out 150ms;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+#search:focus{
+    border-color: rgb(60, 116, 218);
+    outline: none;
+}
+
+.topbar > .row1 > .left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.user-icon-container{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon-container img{
+    width: 140%;
 }
