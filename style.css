@@ -238,11 +238,7 @@ body {
   width: 25%;
 }
 
-/* .announcements{
-  border: cornflowerblue 2px dotted;
-} */
-
-.announcements > .card {
+.card {
   background-color: #fff;
   margin-top: 1rem;
   padding: 1rem 2rem;
@@ -266,6 +262,32 @@ body {
   background-color: #c5c5c5;
 }
 
-.trending {
-  border: sandybrown 2px dotted;
+.trending{
+  margin-top: 2rem;
+}
+
+.trending > .card{
+  padding-block: 1rem;
+}
+
+.trending > .card > span{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0.5rem;
+}
+
+.trending > .card > span > img{
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
+}
+
+.trending > .card > span > .text > *{
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.trending > .card > span > .text > .user{
+  font-weight: 600;
 }
