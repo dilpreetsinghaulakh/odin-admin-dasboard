@@ -168,6 +168,7 @@ body {
 .main {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   width: inherit;
   padding: 2rem;
   padding-top: 2rem;
@@ -178,10 +179,13 @@ body {
   margin: 0;
 }
 
+.main > .projects {
+  width: 75%;
+}
+
 .main > .projects > .grid {
   margin-top: 1rem;
   display: grid;
-  width: 85%;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -202,38 +206,66 @@ body {
   justify-content: space-between;
 }
 
-.element > .text > h3{
+.element > .text > h3 {
   margin: 0;
 }
 
-.element > .text > p{
+.element > .text > p {
   margin-block: 1em;
   font-size: 0.85rem;
   color: #505050;
 }
 
-.element > .icons{
+.element > .icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 2rem;
 }
 
-.element > .icons > *{
+.element > .icons > * {
   stroke-width: 1;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.element > .icons > *:hover{
+.element > .icons > *:hover {
   stroke-width: 1.5;
 }
 
-.announcements{
-  border: cornflowerblue 2px dotted;
+.main > .right {
+  width: 25%;
 }
 
-.trending{
+/* .announcements{
+  border: cornflowerblue 2px dotted;
+} */
+
+.announcements > .card {
+  background-color: #fff;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: #c5c5c5 1px solid;
+}
+
+.announcements > .card > .text > * {
+  margin: 0;
+}
+
+.announcements > .card > .text > p {
+  font-size: 0.75rem;
+  color: #505050;
+}
+
+.announcements > .card > hr {
+  height: 1px;
+  border-width: 0;
+  color: #c5c5c5;
+  background-color: #c5c5c5;
+}
+
+.trending {
   border: sandybrown 2px dotted;
 }
